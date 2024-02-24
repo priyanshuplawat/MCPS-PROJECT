@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function fun() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            const student = {
+                name: name,
+                age: age,
+
+            };
+            document.getElementById("spn").innerHTML = "hello " + name + " " + mobile + "" + Email + "" + Address + "" + City + "" + Remark;
+            document.getElementById("spn").style.backgroundColor = "green";
+            document.getElementById("spn").style.color = "#fff";
+        }
+
+    </script>
+</head>
+
+<body>
+    <hr>
+    <h2 style="text-align: center;">Contact Details</h2>
+    <hr>
+    <table cellpadding="10" cellspacing="0" align="center" style="border: 1px solid black;">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+            <td>mobile</td>
+            <td><input type="Number" id="mobile" /></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" id="Email" /></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="Address" id="address" cols="30" rows="2"></textarea></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" id="city" /> <select option="agra" id=""></select></td>
+        </tr>
+        <tr>
+            <td>Remark</td>
+            <td><input type="text" id="Remark" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="button" name="btn" value="Get Detail" onclick="fun()">
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <span id="spn"></span>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
