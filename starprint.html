@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            var number = parseInt(document.getElementById("num").value );
+            var row = 1;
+            while(row<=number){
+                var star = 1;
+                while(star <= row){
+                document.write(row)
+                star++;
+
+            }
+            document.write("<br>");
+            row++;
+        }
+    }
+    </script>
+</head>
+<body>
+    <center>
+        Enter Number
+        <input type="text" id="num"><br><br>
+        <input type="button" value="print" onclick="fun()">
+    </center>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            var num = parseInt(document.getElementById("num").value);
+            var i=1;
+            document.write("<table align='center' cellpadding='5' cellspacing='2' border='1'>");
+                while(i<=num){
+                    var j = 1;
+                    document.write("<tr>");
+                        while(j<=10){
+                            document.write("<td>"+i*j+"</td>");
+                            j++;
+                        }
+                        document.write("</tr>");
+                        i++;
+                }
+                document.write("</table>");
+        }
+
+
+
+        
+    </script>
+</head>
+<body>
+    <h2>Create Table</h2>
+    <hr>
+    Please Enter a Number
+    <input id="num" type="text"><br><br>
+    <input id="btn" value="generate table"  type="button" onclick="fun()">
+    
+
+</body>
+</html>
